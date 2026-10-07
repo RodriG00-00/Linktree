@@ -1,0 +1,29 @@
+/* Importando uma fonte elegante moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Adicionando um fundo listrado super sutil escuro */
+    background-image: radial-gradient(circle at center, #111 0%, #050505 100%);
+}
+
+/* Efeito Glassmorphism escuro com bordas sutis douradas */
+.glass-panel {
+    background: rgba(20, 20, 20, 0.4);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(245, 158, 11, 0.15); /* Cor dourada com transparência */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+/* Base de elevação para os botões */
+.link-card {
+    transform: translateY(0);
+}
+
+/* Quando passa o mouse no botão */
+.link-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.08), 
+                0 4px 6px -4px rgba(245, 158, 11, 0.05);
+}

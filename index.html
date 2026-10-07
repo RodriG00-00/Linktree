@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Rodrigo Front - Links</title>
+    
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração de cores personalizadas do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                        },
+                        dark: {
+                            900: '#111827',
+                            950: '#050505',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-950 text-gray-200 min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+    
+    <!-- Luzes de Fundo (Elementos decorativos sutis) -->
+    <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-gold-600/10 rounded-full blur-[100px]"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-gold-500/10 rounded-full blur-[100px]"></div>
+
+    <!-- Container Principal do Linktree -->
+    <main class="max-w-md w-full glass-panel rounded-3xl p-8 relative z-10 flex flex-col items-center">
+        
+        <!-- Foto de Perfil com brilho -->
+        <div class="relative mb-6 group cursor-pointer">
+            <div class="absolute inset-0 bg-gold-500 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
+            <!-- Substitua a imagem abaixo pela sua foto -->
+            <img src="https://i.pravatar.cc/150?img=11" alt="Foto de Paulo Rodrigo" class="relative w-28 h-28 rounded-full border-2 border-gold-500/50 object-cover">
+        </div>
+
+        <!-- Nome e Bio -->
+        <h1 class="text-2xl font-bold text-white mb-2 tracking-wide text-center">Paulo Rodrigo Front</h1>
+        <p class="text-gray-400 text-sm mb-8 text-center px-4 font-light">
+            Desenvolvedor Frontend | Transformando ideias em experiências visuais de alto nível
+        </p>
+
+        <!-- Lista de Links -->
+        <div class="w-full flex flex-col gap-4">
+            
+            <!-- Link 1: Portfólio -->
+            <a href="#" class="link-card flex items-center p-4 rounded-xl border border-gray-800 bg-gray-900/60 hover:bg-gray-800/80 hover:border-gold-500/50 transition-all duration-300 group">
+                <div class="w-10 h-10 rounded-lg bg-gray-800 group-hover:bg-gold-500/20 flex items-center justify-center text-gray-400 group-hover:text-gold-400 transition-colors">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <span class="flex-1 text-center font-medium text-gray-300 group-hover:text-white mr-10 transition-colors">Meu Portfólio</span>
+            </a>
+
+            <!-- Link 2: GitHub -->
+            <a href="#" class="link-card flex items-center p-4 rounded-xl border border-gray-800 bg-gray-900/60 hover:bg-gray-800/80 hover:border-gold-500/50 transition-all duration-300 group">
+                <div class="w-10 h-10 rounded-lg bg-gray-800 group-hover:bg-gold-500/20 flex items-center justify-center text-gray-400 group-hover:text-gold-400 transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <span class="flex-1 text-center font-medium text-gray-300 group-hover:text-white mr-10 transition-colors">Repositórios GitHub</span>
+            </a>
+
+            <!-- Link 3: LinkedIn -->
+            <a href="#" class="link-card flex items-center p-4 rounded-xl border border-gray-800 bg-gray-900/60 hover:bg-gray-800/80 hover:border-gold-500/50 transition-all duration-300 group">
+                <div class="w-10 h-10 rounded-lg bg-gray-800 group-hover:bg-gold-500/20 flex items-center justify-center text-gray-400 group-hover:text-gold-400 transition-colors">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <span class="flex-1 text-center font-medium text-gray-300 group-hover:text-white mr-10 transition-colors">LinkedIn</span>
+            </a>
+
+            <!-- Link 4: YouTube/Outro -->
+            <a href="#" class="link-card flex items-center p-4 rounded-xl border border-gray-800 bg-gray-900/60 hover:bg-gray-800/80 hover:border-gold-500/50 transition-all duration-300 group">
+                <div class="w-10 h-10 rounded-lg bg-gray-800 group-hover:bg-gold-500/20 flex items-center justify-center text-gray-400 group-hover:text-gold-400 transition-colors">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span class="flex-1 text-center font-medium text-gray-300 group-hover:text-white mr-10 transition-colors">Canal no YouTube</span>
+            </a>
+        </div>
+
+        <!-- Ícones Sociais do Rodapé -->
+        <div class="flex gap-6 mt-10">
+            <a href="#" class="text-gray-500 hover:text-gold-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-xl">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gold-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-xl">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gold-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-xl">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gold-400 transform hover:scale-110 hover:-translate-y-1 transition-all duration-300 text-xl">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+    </main>
+</body>
+</html>
